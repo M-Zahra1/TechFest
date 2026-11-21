@@ -10,15 +10,13 @@ A responsive three-page event website built with semantic HTML5, hand-written CS
 
 ## Visual identity — silver, purple and black
 
-The shared visual system uses metallic silver surfaces, deep black sections and purple highlights. The homepage hero uses a chrome robotic hand image; the poster concept below removes the orbiting purple rings and keeps the angular metallic details.
+The shared visual system uses metallic silver surfaces, deep black sections and purple highlights. The homepage hero uses a chrome robotic hand image.
 
-![TechFest 2026 poster concept without purple orbit rings](assets/techfest-poster-no-rings.png)
+![Chrome robotic hand hero artwork](assets/robot-hand-860.webp)
 
-![Chrome robotic hand hero artwork](assets/robot-hand-silver-purple.png)
+**Live site:** <https://m-zahra1.github.io/TechFest/>
 
-The static design preview in `assets/homepage-visual-preview.svg` is retained as an earlier layout reference. After deploying, replace it with a real screenshot of the live homepage so the README meets the assignment screenshot requirement. Add the published GitHub Pages URL below.
-
-**Live site:** Add your GitHub Pages URL after deployment.
+**Repository:** <https://github.com/M-Zahra1/TechFest>
 
 ## Run locally
 
@@ -92,15 +90,14 @@ Lighthouse scores and W3C validation results are not claimed here; obtain them f
 ## Project structure
 
 ```text
-techfest-2026-website/
+TechFest/
 ├── index.html
 ├── events.html
 ├── register.html
 ├── README.md
 ├── assets/
-│   ├── homepage-visual-preview.svg
-│   ├── robot-hand-silver-purple.png
-│   └── techfest-poster-no-rings.png
+│   ├── robot-hand-430.webp
+│   └── robot-hand-860.webp
 ├── css/
 │   └── style.css
 └── js/
@@ -111,3 +108,7 @@ techfest-2026-website/
 ## Latest visual refinement
 
 The shared theme now uses brushed silver, charcoal black, and a muted violet accent (no neon glow). Main content cards, event cards, filters, and the registration form use black surfaces with silver borders. The registration form has explicit light/dark theme styling so labels, inputs, selects, radio choices, validation messages, and the success summary remain legible in dark mode.
+
+## Performance
+
+The hero image is served as responsive WebP (`robot-hand-430.webp` and `robot-hand-860.webp` via `srcset`) instead of a 1.5 MB PNG, is preloaded with `fetchpriority="high"`, and the Poppins font stylesheet loads without blocking rendering. These changes target the Largest Contentful Paint metric on mobile.
