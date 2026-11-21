@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore TechFest 2026 competitions, workshops and talks. Search the programme and save sessions to your personal schedule.">
+  <meta name="theme-color" content="#09090d">
+  <title>Events | TechFest 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+  <!-- Poppins Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="TechFest 2026 home"><span class="brand-mark" aria-hidden="true">T<span>F</span></span><span class="brand-copy">TECHFEST <strong>2026</strong></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="events.html" aria-current="page">Events</a><a href="register.html">Register</a>
+        <a class="saved-link" href="#saved-events">My schedule <span class="saved-count" id="saved-count">0</span></a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle colour theme">Dark mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container page-hero-inner"><p class="eyebrow"><span class="eyebrow-dot"></span> THE PROGRAMME</p><h1>Find your <span>next challenge.</span></h1><p>From fast-paced competitions to practical workshops and big-picture talks, there is a place for every kind of curious mind.</p><div class="page-hero-meta"><span>12–13 DECEMBER 2026</span><span>·</span><span>8 FEATURED EVENTS</span></div></div>
+    </section>
+
+    <section class="section section-padding events-section" aria-labelledby="events-heading">
+      <div class="container">
+        <div class="section-heading section-heading-split"><div><p class="eyebrow">EXPLORE THE LINE-UP</p><h2 id="events-heading">Choose your experience</h2></div><p>Save the sessions you like. Your personal schedule stays on this device.</p></div>
+        <div class="filter-panel" aria-label="Event filters">
+          <div class="search-field"><label for="event-search">Search events</label><input id="event-search" type="search" placeholder="Try “AI” or “design”…" autocomplete="off"></div>
+          <div class="select-field"><label for="type-filter">Event type</label><select id="type-filter"><option value="all">All types</option><option value="competition">Competitions</option><option value="workshop">Workshops</option><option value="talk">Talks</option></select></div>
+          <fieldset class="day-filter"><legend>Which day?</legend><div class="radio-pills"><label><input type="radio" name="day-filter" value="all" checked><span>Both days</span></label><label><input type="radio" name="day-filter" value="1"><span>Day 1</span></label><label><input type="radio" name="day-filter" value="2"><span>Day 2</span></label></div></fieldset>
+        </div>
+        <div class="results-bar"><p id="event-result-count" aria-live="polite">Showing all events</p><a class="text-link" href="#saved-events">View saved <span class="saved-count-inline" id="saved-count-inline">0</span> <span aria-hidden="true">↓</span></a></div>
+        <div class="event-grid" id="event-grid" aria-live="off"></div>
+        <p class="empty-state" id="empty-state" hidden>No events found. Try changing your search or filters.</p>
+        <section class="saved-section" id="saved-events" aria-labelledby="saved-heading">
+          <div class="saved-heading-row"><div><p class="eyebrow">YOUR PERSONAL LINE-UP</p><h2 id="saved-heading">My schedule <span class="saved-count-heading" id="saved-count-heading">0</span></h2></div><button class="text-button" id="clear-saved" type="button">Clear saved events</button></div>
+          <div class="saved-list" id="saved-list" aria-live="polite"><p class="saved-empty">You have not saved any events yet. Use “Add to my schedule” on an event card to build your line-up.</p></div>
+        </section>
+      </div>
+    </section>
+    <section class="cta-band"><div class="container cta-inner"><div><p class="eyebrow">FOUND YOUR FAVOURITE?</p><h2>Make it official.</h2></div><a class="button button-light" href="register.html">Register for TechFest <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-main"><div><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">T<span>F</span></span><span class="brand-copy">TECHFEST <strong>2026</strong></span></a><p>Curiosity brings us together.<br>Technology takes us further.</p></div><div class="footer-links"><strong>Explore</strong><a href="index.html">Home</a><a href="events.html">Events</a><a href="register.html">Registration</a></div><div class="footer-links"><strong>Get in touch</strong><a href="mailto:computingsociety@example.edu.pk">Computing Society</a><span>University Main Campus, Lahore</span></div></div><div class="container footer-bottom"><span>© 2026 University Computing Society · TechFest</span><span>Designed for curious minds.</span></div></footer>
+</body>
+</html>

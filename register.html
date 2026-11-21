@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Register for TechFest 2026. Enter your university details, choose an event and select your participation preferences.">
+  <meta name="theme-color" content="#09090d">
+  <title>Register | TechFest 2026</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+  <!-- Poppins Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="TechFest 2026 home"><span class="brand-mark" aria-hidden="true">T<span>F</span></span><span class="brand-copy">TECHFEST <strong>2026</strong></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a><a href="events.html">Events</a><a href="register.html" aria-current="page">Register</a>
+        <a class="saved-link" href="events.html#saved-events">My schedule <span class="saved-count" id="saved-count">0</span></a>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle colour theme">Dark mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero page-hero-register"><div class="container page-hero-inner"><p class="eyebrow"><span class="eyebrow-dot"></span> CLAIM YOUR PLACE</p><h1>Be part of <span>what’s next.</span></h1><p>Complete the form below to register your interest in TechFest 2026. Make sure your university details are correct.</p><div class="page-hero-meta"><span>12–13 DECEMBER 2026</span><span>·</span><span>REGISTRATION FORM</span></div></div></section>
+
+    <section class="section section-padding registration-section" aria-labelledby="form-heading">
+      <div class="container registration-layout">
+        <aside class="registration-aside"><p class="eyebrow">BEFORE YOU BEGIN</p><h2>One form.<br><span>Two brilliant days.</span></h2><p>Use your university email address and registration number. You can choose your event and participation format below.</p><div class="aside-detail"><span class="aside-icon" aria-hidden="true">✳</span><div><strong>Event dates</strong><span>12–13 December 2026</span></div></div><div class="aside-detail"><span class="aside-icon" aria-hidden="true">⌖</span><div><strong>Venue</strong><span>University Main Campus, Lahore</span></div></div><div class="aside-detail"><span class="aside-icon" aria-hidden="true">◇</span><div><strong>What you need</strong><span>University email + registration number</span></div></div><p class="form-note">This is a front-end demonstration form. It validates your details in the browser and does not submit data to a server.</p></aside>
+        <div class="form-card">
+          <div class="form-card-heading"><p class="eyebrow">TECHFEST 2026</p><h2 id="form-heading">Participant registration</h2><p>Fields marked with <span class="required-mark">*</span> are required.</p></div>
+          <form id="registration-form" novalidate>
+            <div class="form-grid">
+              <div class="form-field form-field-full"><label for="full-name">Full name <span class="required-mark">*</span></label><input id="full-name" name="fullName" type="text" autocomplete="name" placeholder="e.g. Ayesha Khan" required><small class="field-error" id="full-name-error"></small></div>
+              <div class="form-field"><label for="university-email">University email <span class="required-mark">*</span></label><input id="university-email" name="email" type="email" autocomplete="email" placeholder="name@university.edu.pk" pattern=".+@.+\.edu\.pk" title="Use a university email ending in .edu.pk" required><small class="field-hint">Must end with .edu.pk</small><small class="field-error" id="university-email-error"></small></div>
+              <div class="form-field"><label for="registration-number">Registration number <span class="required-mark">*</span></label><input id="registration-number" name="registrationNumber" type="text" placeholder="F2026123456" pattern="F2026[0-9]{6}" title="Format: F2026 followed by 6 digits" autocapitalize="characters" required><small class="field-hint">Format: F2026 followed by 6 digits</small><small class="field-error" id="registration-number-error"></small></div>
+              <div class="form-field form-field-full"><label for="event-choice">Choose an event <span class="required-mark">*</span></label><select id="event-choice" name="event" required><option value="">Select an event</option></select><small class="field-error" id="event-choice-error"></small></div>
+              <div class="form-field"><label for="team-size">Team size <span class="required-mark">*</span></label><input id="team-size" name="teamSize" type="number" min="1" max="4" step="1" value="1" required><small class="field-hint">Choose 1–4 participants. Individual entries must be 1.</small><small class="field-error" id="team-size-error"></small></div>
+              <div class="form-field"><label for="tshirt-size">T-shirt size <span class="required-mark">*</span></label><select id="tshirt-size" name="tshirtSize" required><option value="">Choose a size</option><option value="S">Small (S)</option><option value="M">Medium (M)</option><option value="L">Large (L)</option><option value="XL">Extra Large (XL)</option><option value="XXL">XXL</option></select><small class="field-error" id="tshirt-size-error"></small></div>
+              <fieldset class="form-field form-field-full participation-field"><legend>Participation type <span class="required-mark">*</span></legend><div class="choice-row"><label class="choice-card"><input type="radio" name="participation" value="individual" checked><span><strong>Individual</strong><small>Register as one participant</small></span></label><label class="choice-card"><input type="radio" name="participation" value="team"><span><strong>Team</strong><small>Register with a group of up to 4</small></span></label></div><small class="field-error" id="participation-error"></small></fieldset>
+              <div class="form-field form-field-full terms-field"><label class="checkbox-label"><input id="terms" name="terms" type="checkbox" required><span>I confirm that the information provided is correct and agree to the event participation terms. <span class="required-mark">*</span></span></label><small class="field-error" id="terms-error"></small></div>
+            </div>
+            <button class="button button-primary submit-button" type="submit">Submit registration <span aria-hidden="true">↗</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <section class="registration-summary" id="registration-summary" aria-labelledby="summary-heading" hidden>
+            <div class="summary-icon" aria-hidden="true">✓</div><div><p class="eyebrow">FORM VALIDATED</p><h3 id="summary-heading">Your registration details are ready.</h3><p>This demo has checked your information locally. No registration has been sent to the university.</p></div>
+            <dl class="summary-details" id="summary-details"></dl>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-main"><div><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true">T<span>F</span></span><span class="brand-copy">TECHFEST <strong>2026</strong></span></a><p>Curiosity brings us together.<br>Technology takes us further.</p></div><div class="footer-links"><strong>Explore</strong><a href="index.html">Home</a><a href="events.html">Events</a><a href="register.html">Registration</a></div><div class="footer-links"><strong>Get in touch</strong><a href="mailto:computingsociety@example.edu.pk">Computing Society</a><span>University Main Campus, Lahore</span></div></div><div class="container footer-bottom"><span>© 2026 University Computing Society · TechFest</span><span>Designed for curious minds.</span></div></footer>
+</body>
+</html>
